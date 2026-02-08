@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Registration Form</title>
+</head>
+<body>
+  <h2>User Registration Form</h2>
+  
+  <form action="/submit-form" method="post">
+    <fieldset>
+    <legend>Personal Information</legend>
+    
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+  </fieldset>
+    <!-- Name -->
+    <label for="fullname">Full Name:</label><br>
+    <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required><br><br>
+
+    <!-- Email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <!-- Password -->
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="Enter password" required><br><br>
+
+    <!-- Gender (Radio buttons) -->
+    <label>Gender:</label><br>
+    <label><input type="radio" name="gender" value="male" required> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <label><input type="radio" name="gender" value="other"> Other</label><br><br>
+
+    <!-- Hobbies (Checkboxes) -->
+    <label>Hobbies:</label><br>
+    <label><input type="checkbox" name="hobby" value="reading"> Reading</label>
+    <label><input type="checkbox" name="hobby" value="music"> Music</label>
+    <label><input type="checkbox" name="hobby" value="sports"> Sports</label><br><br>
+
+    <!-- Country (Dropdown) -->
+    <label for="country">Country:</label><br>
+    <select id="country" name="country" required>
+      <option value="">Select Country</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="usa">USA</option>
+      <option value="uk">UK</option>
+    </select><br><br>
+
+    <!-- Terms & Conditions (Checkbox) -->
+    <label>
+      <input type="checkbox" name="terms" required> I agree to the terms and conditions
+    </label><br><br>
+    <textarea name="message" id="message" rows="4" cols="50">
+</textarea>
+
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+  </form>
+</body>
+</html>
